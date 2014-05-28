@@ -1,0 +1,17 @@
+#left-side {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  background-image: url('/images/petar_surfing.jpg');
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  background-size: auto 100%;
+}
+
+#main-content {
+  position: absolute;
+  left: 500px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}

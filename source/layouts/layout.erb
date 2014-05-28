@@ -7,18 +7,19 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Petar Petrov - Homepage" %></title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "normalize", "main" %>
     <%= javascript_include_tag  "all" %>
   </head>
 
   <body class="<%= page_classes %>">
     <div id="body-wrap">
       <div id="left-side">
-        
+
       </div>
       <div id="main-content">
+        
         <%= yield %>
       </div>
     </div>
