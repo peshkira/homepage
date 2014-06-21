@@ -53,8 +53,16 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+configure :development do
+  activate :directory_indexes
+  activate :relative_assets
+end
+
 # Build-specific configuration
 configure :build do
+
+  activate :directory_indexes
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 

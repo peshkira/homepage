@@ -7,16 +7,16 @@
       <%= link_to 'About Me', '/' %>
     <% end %>
 
-    <% if current_page.url == 'work' %>
+    <% if current_page.url == '/work/' %>
       <span class="current">My Work</span>
     <% else %>
-      <%= link_to 'My Work', 'work' %>
+      <%= link_to 'My Work', '/work' %>
     <% end %>
 
-    <% if current_page.url == 'hire' %>
+    <% if current_page.url == '/hire/' %>
       <span class="current">Hire Me</span>
     <% else %>
-      <%= link_to 'Hire Me', 'hire' %>
+      <%= link_to 'Hire Me', '/hire' %>
     <% end %>
 
   </div>
