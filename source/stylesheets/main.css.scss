@@ -1,3 +1,5 @@
+@import "fonts";
+
 #left-side {
   position: absolute;
   height: 100%;
@@ -6,6 +8,67 @@
   background-repeat: no-repeat;
   background-position: 75% 50%;
   background-size: auto 100%;
+
+  .heading {
+    padding: 25px 20px;
+    color: white;
+    font-size: 40px;
+    font-family: "Proxima Nova Light";
+    text-align: center;
+  }
+
+  .contact-wrap {
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+
+
+    .contact {
+      width: 320px;
+      height: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+
+
+      .social-img {
+        float: left;
+        width: 42px;
+        height: 42px;
+        background-size: 42px 42px;
+        margin-right: 20px;
+
+        a {
+          display: block;
+          width: 42px;
+          height: 42px;
+        }
+      }
+
+      #twitter-img {
+        background-image: url('/images/twitter.png');
+      }
+
+      #github-img {
+        background-image: url('/images/github.png');
+      }
+
+      #email-img {
+        background-image: url('/images/email.png');
+      }
+
+      #linkedin-img {
+        background-image: url('/images/linkedin.png');
+      }
+
+      #googleplus-img {
+        background-image: url('/images/googleplus.png');
+      }
+    }
+  }
 }
 
 #main-content {
