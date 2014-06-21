@@ -72,9 +72,36 @@
 }
 
 #main-content {
-  position: absolute;
+  position: fixed;
   left: 500px;
-  width: 100%;
+  width: calc(100% - 500px);
   height: 100%;
   background-color: white;
+
+  header {
+    height: 50px;
+    background-color: #3497DB;
+    text-align: center;
+
+    #header-wrap {
+      padding-top: 12px;
+
+      a {
+        margin: 0 auto;
+        margin-right: 25px;
+        font-size: 18pt;
+        font-family: "Proxima Nova Light";
+        color: white;
+        text-decoration: none;
+      }
+
+      span.current {
+        margin: 0 auto;
+        margin-right: 25px;
+        font-size: 18pt;
+        font-family: "Proxima Nova Bold";
+        color: #1E5F8A;
+      }
+    }
+  }
 }
