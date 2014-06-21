@@ -1,7 +1,7 @@
 @import "fonts";
 
 #left-side {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 500px;
   background-image: url('/images/petar_surfing.jpg');
@@ -72,15 +72,17 @@
 }
 
 #main-content {
-  position: fixed;
+  position: absolute;
   left: 500px;
   width: calc(100% - 500px);
   height: 100%;
   background-color: white;
 
   header {
+    position: fixed;
+    width: calc(100% - 500px);
     height: 50px;
-    background-color: #3497DB;
+    background-color: #3497DB;;
     text-align: center;
 
     #header-wrap {
@@ -102,6 +104,43 @@
         font-family: "Proxima Nova Bold";
         color: #1E5F8A;
       }
+    }
+  }
+
+  .content-wrap{
+    margin-top: 70px;
+
+    h1 {
+      margin: 20px 40px;
+      font-size: 26pt;
+      font-family: "Proxima Nova Bold";
+      color: #1E5F8A;
+    }
+
+    .text-common {
+      font-size: 18pt;
+      font-family: "Proxima Nova Regular";
+      color: #3c3c3c;
+
+      a {
+        color: #3497DB;
+        text-decoration: none;
+        font-family: "Proxima Nova Regular Italic";
+      }
+
+      p {
+        margin: 20px 40px;
+      }
+
+    }
+
+    .text-separator {
+      margin: 0 auto;
+      width: 32px;
+      height: 32px;
+      background-image: url('/images/atom.png');
+      background-size: 32px 32px;
+      text-align: center;
     }
   }
 }
