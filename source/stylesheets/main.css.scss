@@ -24,9 +24,6 @@
     width: 500px;
     background-color: rgba(0, 0, 0, 0.5);
 
-
-
-
     .contact {
       width: 320px;
       height: 100%;
@@ -133,6 +130,64 @@
       p {
         margin: 20px 40px;
       }
+    }
+
+    #projects {
+      padding: 20px 40px;
+      margin-bottom: 30px;
+
+      div {
+        float: left;
+        margin: 10px 25px;
+      }
+
+      .project-logo {
+        width: 86px;
+        height: 86px;
+        background-size: 86px;
+        cursor: pointer;
+        -webkit-transition: all .2s ease-in-out;
+        //filter: url('/images/filters.svg#grayscale'); /* Firefox 3.5+ */
+        //filter: gray; /* IE6-9 */
+        //-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+        //opacity: 0.7;
+
+        a {
+          display: block;
+          width: 86px;
+          height: 86px;
+        }
+      }
+
+      .project-logo:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1); /* IE 9 */
+        transform: scale(1.1);
+        // filter: none;
+        // -webkit-filter: grayscale(0);
+        //opacity: 1;
+      }
+
+      #kurier {
+        background-image: url('/images/work/kurier.png');
+      }
+
+      #hn {
+        background-image: url('/images/work/hn.png');
+      }
+
+      #pledge {
+        background-image: url('/images/work/pledge.png');
+      }
+
+      #c3po {
+        background-image: url('/images/work/c3po.png');
+      }
+
+      #bspotted {
+        background-image: url('/images/work/bspotted.png');
+      }
+
 
     }
 
@@ -143,6 +198,16 @@
       background-image: url('/images/atom.png');
       background-size: 32px 32px;
       text-align: center;
+      clear: both;
     }
   }
 }
+
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+@import "950px";
