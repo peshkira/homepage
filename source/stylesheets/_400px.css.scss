@@ -1,0 +1,51 @@
+@media only screen and (max-width: 400px) {
+
+  #left-side {
+    background-position: 75% 50%;
+
+    .contact-wrap {
+      .contact {
+        .social-img {
+          margin-right: 5px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  #main-content {
+
+    header {
+
+      #header-wrap {
+        padding-top: 16px;
+        a, span.current {
+          margin-left: 5px;
+          margin-right: 10px;
+          font-size: 15pt;
+        }
+      }
+    }
+
+    .content-wrap {
+
+      h1 {
+        margin: 10px 20px;
+      }
+      .text-common {
+        p {
+          margin: 10px 20px;
+        }
+      }
+
+      #projects {
+        padding: 10px 10px;
+
+        div {
+          margin-left: 10px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
