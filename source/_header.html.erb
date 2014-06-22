@@ -1,22 +1,22 @@
 <header>
   <div id="header-wrap">
 
-    <% if current_page.url == '/' %>
+    <% if current_page.url == '/' or current_page.url == '/index/' %>
       <span class="current">About Me</span>
     <% else %>
-      <%= link_to 'About Me', '/', data: { no_scroll: true } %>
+      <%= link_to 'About Me', '/index.html' %>
     <% end %>
 
     <% if current_page.url == '/work/' %>
       <span class="current">My Work</span>
     <% else %>
-      <%= link_to 'My Work', '/work', data: { no_scroll: true }  %>
+      <%= link_to 'My Work', '/work.html' %>
     <% end %>
 
     <% if current_page.url == '/hire/' %>
       <span class="current">Hire Me</span>
     <% else %>
-      <%= link_to 'Hire Me', '/hire', data: { no_scroll: true }  %>
+      <%= link_to 'Hire Me', '/hire.html' %>
     <% end %>
   </div>
 </header>
