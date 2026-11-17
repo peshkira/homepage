@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petar Petrov</title>
+  <meta name="description" content="Petar Petrov — Software engineer focused on systems design, mobile architecture, and connected medical hardware. Mobile Engineering Team Lead at Sava Technologies." />
+  <meta property="og:title" content="Petar Petrov" />
+  <meta property="og:description" content="Software engineer focused on systems design, mobile architecture, and connected medical hardware." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://petarpetrov.org" />
+  <meta property="og:image" content="https://petarpetrov.org/images/petar.jpg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <main class="page">
+    <header>
+      <div class="identity">
+        <img class="avatar" src="./images/petar.jpg" alt="Petar Petrov" />
+        <div class="identity-text">
+          <strong>Petar Petrov</strong>
+          <span>Not the fashion designer, the Jedi.</span>
+        </div>
+      </div>
+
+      <button class="theme-btn" id="theme-toggle-btn" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+        <!-- Sun Icon (shown in Dark mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+        <!-- Moon Icon (shown in Light mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </header>
+
+    <section class="hero">
+      <h1>
+        Code is easier to generate than ever.<br />
+        <em>Designing systems that last</em> is still the hard part.
+      </h1>
+      <p>
+        I’m a software engineer focused on <strong>systems design, mobile architecture, and connected medical hardware</strong>.
+      </p>
+      <p>
+        Today, I lead the Mobile Engineering team at <a href="https://sava.health" target="_blank" rel="noopener">Sava Technologies</a>, where we build the mobile platform for real-time, pain-free wearable molecular biosensors.
+      </p>
+    </section>
+
+    <div class="signal-wrap">
+      <canvas id="signalCanvas" width="780" height="68" aria-label="Interactive signal waveform"></canvas>
+      <div class="signal-caption">
+        <span id="signal-label">BIOSENSOR SIGNAL // SAVA.HEALTH WEARABLE TELEMETRY (2023-PRESENT)</span>
+        <span>SELECT A CHAPTER BELOW</span>
+      </div>
+    </div>
+
+    <nav class="chapters-nav" role="tablist" aria-label="Career chapters">
+      <button class="chapter-tab active" role="tab" aria-selected="true" aria-controls="chapter-0" id="tab-0" type="button">
+        <span class="chapter-year">2023 - Present</span>
+        <span class="chapter-name">Sava Technologies</span>
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false" aria-controls="chapter-1" id="tab-1" type="button">
+        <span class="chapter-year">2013 - 2026</span>
+        <span class="chapter-name">Creative Pragmatics</span>
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false" aria-controls="chapter-2" id="tab-2" type="button">
+        <span class="chapter-year">2009 - 2013</span>
+        <span class="chapter-name">Digital Preservation</span>
+      </button>
+      <button class="chapter-tab" role="tab" aria-selected="false" aria-controls="chapter-3" id="tab-3" type="button">
+        <span class="chapter-year">2005 - 2012</span>
+        <span class="chapter-name">UT Vienna</span>
+      </button>
+    </nav>
+
+    <section class="chapter-story">
+      <!-- Chapter 1: Sava Technologies -->
+      <article class="chapter-panel active" id="chapter-0" role="tabpanel" aria-labelledby="tab-0">
+        <div class="story-header">
+          <h2>Sava Technologies (sava.health)</h2>
+          <span class="story-role">Mobile Engineering Team Lead • 2023 - Present</span>
+        </div>
+        <div class="story-body">
+          <p>
+            Leading the mobile engineering team building continuous molecular monitoring. Working at the boundary where low-level wearable biosensor hardware, regulated clinical reliability, and everyday mobile UX meet.
+          </p>
+          <p>
+            In high-reliability medical systems, architecture is how you ensure continuous sensor streams, Bluetooth resilience, and patient trust hold up in the real world.
+          </p>
+        </div>
+        <div class="story-highlights">
+          <span class="pill">HealthTech</span>
+          <span class="pill">Wearable Biosensors</span>
+          <span class="pill">Systems Design</span>
+          <span class="pill">Software Architecture</span>
+          <span class="pill">Mobile</span>
+        </div>
+      </article>
+
+      <!-- Chapter 2: Creative Pragmatics -->
+      <article class="chapter-panel" id="chapter-1" role="tabpanel" aria-labelledby="tab-1" hidden>
+        <div class="story-header">
+          <h2>Creative Pragmatics</h2>
+          <span class="story-role">Co-Founder &amp; Product Developer • 2013 - 2026</span>
+        </div>
+        <div class="story-body">
+          <p>
+            Co-founded after finishing my studies in Vienna and ran for thirteen years before closing the chapter in 2026. We partnered with startups and established companies to design and ship mobile and web products from scratch, including high-traffic platforms like <strong>KURIER.at</strong>, <strong>Canva's remove.bg</strong>, <strong>Invoicely</strong>, <strong>UbiGo</strong>, <strong>FK Austria</strong> and many more.
+          </p>
+          <p>
+            Over time, our most meaningful work pivoted toward healthcare and digital therapeutics, collaborating on products like <strong>MedBee</strong> (clinical decision network for doctors) and <strong>mySugr</strong> (digital diabetes companion), which sparked my long-term focus on medical systems.
+          </p>
+        </div>
+        <div class="story-highlights">
+          <span class="pill">Mobile Engineering</span>
+          <span class="pill">Product Development</span>
+          <span class="pill">Requirements Analysis</span>
+          <span class="pill">Production Operations</span>
+        </div>
+      </article>
+
+      <!-- Chapter 3: Digital Preservation Research -->
+      <article class="chapter-panel" id="chapter-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+        <div class="story-header">
+          <h2>Digital Preservation Research</h2>
+          <span class="story-role">Research Assistant • 2009 - 2013</span>
+        </div>
+        <div class="story-body">
+          <p>
+            Before starting Creative Pragmatics, I worked as a research assistant at UT Vienna in the field of <strong>digital preservation</strong>, investigating how software systems, file formats, and digital repositories can survive for decades without succumbing to bit rot or obsolescence.
+          </p>
+          <p>
+            Created and worked on open-source tools to categorise formats and establish preservation plans and learned early on to think about systems in terms of decades rather than release cycles only.
+          </p>
+        </div>
+        <div class="story-highlights">
+          <span class="pill">Digital Preservation</span>
+          <span class="pill">Long-Term System Longevity</span>
+          <span class="pill">Open Source Software</span>
+          <span class="pill">Research</span>
+          <span class="pill">UT Vienna</span>
+        </div>
+      </article>
+
+      <!-- Chapter 4: UT Vienna -->
+      <article class="chapter-panel" id="chapter-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+        <div class="story-header">
+          <h2>Computer Science Studies @ UT Vienna</h2>
+          <span class="story-role">MSc Software Engineering &amp; Internet Computing • 2005 - 2012</span>
+        </div>
+        <div class="story-body">
+          <p>
+            After finishing high-school in Sofia, Bulgaria, I moved to Vienna, Austria to study Computer Science (Software Engineering &amp; Internet Computing) at the Vienna University of Technology.
+          </p>
+          <p>
+            Built the formal foundation in distributed systems, software architecture, and networked computing that still informs how I reason about complex systems today.
+          </p>
+        </div>
+        <div class="story-highlights">
+          <span class="pill">Software Engineering</span>
+          <span class="pill">Internet Computing</span>
+          <span class="pill">Distributed Systems</span>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer-bar">
+      <span class="footer-meta">Vienna, Austria</span>
+      <div class="links">
+        <a href="mailto:petpet@hey.com">Email</a>
+        <a href="https://www.linkedin.com/in/petarepetrov" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/peshkira" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./signal.js"></script>
+</body>
+</html>
