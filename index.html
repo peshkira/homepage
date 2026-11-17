@@ -11,6 +11,16 @@
   <meta property="og:url" content="https://petarpetrov.org" />
   <meta property="og:image" content="https://petarpetrov.org/images/petar.jpg" />
   <link rel="stylesheet" href="./styles.css" />
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var urlTheme = params.get("theme");
+      var isLight = urlTheme === "light" || (!urlTheme && window.matchMedia("(prefers-color-scheme: light)").matches);
+      if (isLight) {
+        document.documentElement.classList.add("light");
+      }
+    })();
+  </script>
 </head>
 <body>
 

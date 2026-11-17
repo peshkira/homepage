@@ -45,16 +45,34 @@ let targetAmp = CHAPTER_SIGNALS[0].amp;
 let currentAmp = CHAPTER_SIGNALS[0].amp;
 
 /**
- * Initializes system theme synchronization (`prefers-color-scheme`) and manual toggle binding.
+ * Initializes system theme synchronization (`prefers-color-scheme`), optional `?theme=` URL override,
+ * and manual toggle binding.
  */
 function initThemeController() {
+  const params = new URLSearchParams(window.location.search);
+  const urlTheme = params.get("theme");
   const mediaQuery = window.matchMedia("(prefers-color-scheme: light)");
-  if (mediaQuery.matches) {
+
+  if (urlTheme === "light") {
+    manualThemeOverride = true;
+    document.documentElement.classList.add("light");
+    document.body.classList.add("light");
+  } else if (urlTheme === "dark") {
+    manualThemeOverride = true;
+    document.documentElement.classList.remove("light");
+    document.body.classList.remove("light");
+  } else if (mediaQuery.matches) {
+    document.documentElement.classList.add("light");
     document.body.classList.add("light");
   }
 
+  requestAnimationFrame(() => {
+    document.body.classList.add("theme-ready");
+  });
+
   mediaQuery.addEventListener("change", event => {
     if (!manualThemeOverride) {
+      document.documentElement.classList.toggle("light", event.matches);
       document.body.classList.toggle("light", event.matches);
     }
   });
@@ -70,7 +88,8 @@ function initThemeController() {
  */
 function toggleTheme() {
   manualThemeOverride = true;
-  document.body.classList.toggle("light");
+  const isLight = document.body.classList.toggle("light");
+  document.documentElement.classList.toggle("light", isLight);
 }
 
 /**
@@ -208,7 +227,9 @@ function initSignalCanvas() {
       smoothMouseX += (targetMouseX - smoothMouseX) * 0.18;
     }
 
-    const isLight = document.body.classList.contains("light");
+    const isLight =
+      document.documentElement.classList.contains("light") ||
+      document.body.classList.contains("light");
     const strokeColor = isLight ? "#141413" : "#2dd4bf";
 
     // Secondary harmonic trace
